@@ -16,7 +16,7 @@ function Nav() {
                     <div className="line-3"></div>
                 </div>
                 
-                <ul style={navStyle}>
+                <ul className="nav-style">
                     <li><a style={linkStyle} href="#">Coin Laundry</a></li>
                     <li><a style={linkStyle} href="#">Wash Dry Fold</a></li>
                     <li><a style={linkStyle} href="#">Commercial</a></li>
@@ -35,19 +35,6 @@ export default Nav
 
 
 
-const navStyle = {
-    'display': 'flex',
-    'flexDirection': 'row',
-    'flexWrap': 'wrap',
-    'padding': '20px',
-    'justifyContent': 'space-around',
-    'listStyle' : 'none',
-    'backgroundColor' : '#333',
-    'color' : '#ddd',
-    
-
-    
-}
 const linkStyle = {
     'textDecoration': 'none',
     'color' : '#ddd',

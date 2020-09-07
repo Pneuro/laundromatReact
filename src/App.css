@@ -59,7 +59,16 @@ code {
   background-color: #00aeee;
   outline: 1px solid #333;
 }
-
+.nav-style {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 20px;
+  justify-content: space-around;
+  list-style: none;
+  background-color: #333;
+  color: #333;
+}
 .list {
   display: flex;
   flex-direction: column;
