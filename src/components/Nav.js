@@ -1,32 +1,31 @@
-import React from 'react'
+import React, {useState} from 'react'
 import { Link } from 'react-router-dom';
-import { useState } from 'react';
+
 
 
 
 
 function Nav(props) {
-    
-
-    function navActive (e) {
-        e.preventDefault()
-        console.log('SHIT MOTHEFUCKER')
-        
+    const [menu, setMenu] = useState(false);
+   
+    const navActive = () => {
+        setMenu((prev) => !prev);
         
     }
     return (
         <div>
             <nav>
                 
-                <div onClick={navActive}  className="burger">
-                    <div className="line-1 active"></div>
-                    <div className="line-2"></div>
-                    <div className="line-3"></div>
+                <div onClick={navActive}  className={menu ? "burger" : "burger"}>
+                    <div className={menu ? "line-1" : "active line-1"}></div>
+                    <div className={menu ? "line-2" : "active line-2"}></div>
+                    <div className={menu ? "line-3" : "active line-3"}></div>
+
+                    <li><img style={imgStyle} src={props.image} alt="Huron Lakeshore Laundry Logo"></img> </li>
                 
                    
-                    <li><img style={imgStyle} src={props.image} alt="Huron Lakeshore Laundry Logo"></img> </li>
                 </div>
-                <ul className="nav-style hidden">
+                <ul className={menu ? "nav-style" : "nav-style hidden"}>
                     <li><img style={imgStyle} src={props.image} alt="Huron Lakeshore Laundry Logo"></img> </li>
                     
                    <Link to="/coin"> <li>Coin Laundry</li></Link>
@@ -57,4 +56,5 @@ export default Nav
 
 const imgStyle = {
     "width": '100%',
+    
 }

@@ -257,7 +257,13 @@ code {
     z-index: 1;
     text-shadow: 1px 1px 10px #fff;
     color: #eee;
-    width: 100%;
+    width: 60%;
+  }
+  .nav-style li{
+    color: white;
+  }
+  .nav-style a{
+    text-decoration: none;
   }
   .coin {
     background-color: #00aeee;
@@ -302,10 +308,11 @@ code {
     color: #fff;
     height: 40vh;
   }
-
+  
   .burger {
     padding: 50px 20px;
-    z-index: 1;
+    z-index: 2;
+    transition: 1s ease-in-out;
   }
   .line-1 {
     margin: 3px;
@@ -314,10 +321,13 @@ code {
     height: 3px;
     background-color: #00aeee;
     outline: 1px solid #333;
+    transform:  translate(280px) rotate(-45deg) translateX(-8px);
+    transition: transform 0.5s ease-in;
+    
   }
   .line-2 {
     margin: 3px;
-    
+    opacity: 0;
     width: 22px;
     height: 3px;
     background-color: #00aeee;
@@ -327,6 +337,10 @@ code {
     margin: 3px;
     width: 22px;
     height: 3px;
+    transform:  translate(280px) rotate(45deg) translateX(-8px);
+    transition: transform 0.5s ease-in;
+    
+    
     background-color: #00aeee;
     outline: 1px solid #333;
   }
@@ -346,7 +360,7 @@ code {
     background-color: #00aeee;
   }
   50% {
-    transform:  translate(20px);
+    transform:  rotate(0.7) translate(250px);
     opacity: 1;
     background-color: #00ffff;
   }
@@ -357,44 +371,22 @@ code {
   }
 
 }
-@keyframes spinnerSpin{
+
+@keyframes slideIn {
   from {
-    transform: rotate(0deg) translate(7px);
-    opacity: 1;
-    background-color: #00aeee;
-  }
-  50% {
-    transform:  rotate(0deg) translate(-7px);
-    opacity: 1;
-    background-color: #00ffff;
+    transform: translateX(100%);
   }
   to {
-    transform: rotate(720deg) translate(7px);
-    opacity: 1;
-    background-color: #00aeee;
+    transform: translateX(0%);
   }
-
 }
-
 
 .hidden {
   display: none;
+  
+  animation: 1s ease-in 5s infinite both running slideIn;
 }
 
 .active {
-  transform: rotate(45deg);
-  animation: none;
-}
-.line-1 {
-  animation: 3s linear 1s infinite both running spinner;
-}
-.line-2 {
-  
-  
-  animation: 6s linear 1s infinite both running spinnerSpin;
-}
-.line-3 {
-  
-  animation: 9s linear 1s infinite both running spinner;
-
+  animation: 5s linear 5s infinite both running spinner;
 }
