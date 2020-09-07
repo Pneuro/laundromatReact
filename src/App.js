@@ -9,7 +9,7 @@ import Contact from './components/Contact'
 import Promise from './components/Promise'
 import Footer from './components/Footer'
 import './App.css';
-import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
+
 
 
 function App() {
