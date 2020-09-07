@@ -1,24 +1,26 @@
 import React from 'react';
-import logo from './logo.svg';
+import Header from './components/Header'
+
+import Coin from './components/Coin'
+import WashFold from './components/Washfold'
+import Commercial from './components/Commercial'
+import About from './components/About'
+import Contact from './components/Contact'
+import Promise from './components/Promise'
+import Footer from './components/Footer'
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+     <Header />
+     <Coin />
+     <WashFold />
+     <Commercial />
+     <About />
+     <Contact />
+     <Promise />
+     <Footer />
     </div>
   );
 }

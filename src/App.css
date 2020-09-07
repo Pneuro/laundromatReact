@@ -1,38 +1,320 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;  
+  
+}
+
 .App {
   text-align: center;
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.header {
+  background-image: url('components/static/dryers.jpeg');
+  background-size: 130%;
+  background-repeat: no-repeat;
+  max-height: 1000px;
+  
+}
+
+.burger {
+  padding: 10px;
+}
+.line-1 {
+  margin: 3px;
+  width: 22px;
+  height: 3px;
+  background-color: #00aeee;
+  outline: 1px solid #333;
+}
+.line-2 {
+  margin: 3px;
+  
+  width: 22px;
+  height: 3px;
+  background-color: #00aeee;
+  outline: 1px solid #333;
+}
+.line-3 {
+  margin: 3px;
+  width: 22px;
+  height: 3px;
+  background-color: #00aeee;
+  outline: 1px solid #333;
+}
+
+.list {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  justify-content: space-around;
+  height: 100%;
+}
+.list a{
+  text-decoration: none;
+  color: #ddd;
+}
+.list li {
+  list-style: none;
+}
+.coin {
+  display: flex;
+  flex-direction: column;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding: 30px;
+  background-color: #00aeee;
+  color: #fff;
+  background-image: url('components/static/washers.jpeg');
+  background-size: 130%;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 80vw;
+}
+.content-coin {
+  width: 700px;
+  background-color: #333;
+  opacity: .7;
+  padding: 30px;
+}
+.content-coin li {
+  list-style: none;
 }
 
-.App-link {
-  color: #61dafb;
+.content-coin a {
+  text-decoration: underline;
+  color: #eee;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.content-coin a:hover {
+  text-decoration: none;
+  color: #fff;
+  text-shadow: 2px solid #00aeee;
+}
+.content {
+  width: 700px;
+  background-color: #333;
+  opacity: .7;
+  padding: 30px;
+}
+
+.content-about {
+  width: 60%;
+  float: left;
+  background-color: #333;
+  opacity: .7;
+  padding: 30px;
+}
+
+.content li {
+  list-style: none;
+}
+
+.content a {
+  text-decoration: none;
+}
+
+.washfold {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url('components/static/folded-laundry.jpeg');
+  background-size: 160%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #ee9222;
+  color: #fff;
+  height: 80vw;
+}
+
+.commercial {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  background-image: url('components/static/white-linens.jpeg');
+  background-size: 130%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #333;
+  color: #ddd;
+  height: 80vw;
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  background-image: url('components/static/rolled-clothes.jpeg');
+  background-size: 160%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #00aeee;
+  color: #fff;
+  height: 80vw;
+}
+.contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+ 
+  background-image: url('components/static/girl-laundry.jpeg');
+  background-size: 160%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #00b15e;
+  color: #fff;
+  height: 80vw;
+}
+#contact-form {
+  width: 100%;
+  justify-items: center;
+}
+.form-control {
+  width: 100%;
+}
+.promise {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+ 
+  background-image: url('components/static/phonesize-beach.png');
+  background-size: 130%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #ee00da;
+  color: #fff;
+  height: 80vw;
+}
+
+@media (max-width: 419px) {
+  .content {
+    max-width: 350px;   
   }
-  to {
-    transform: rotate(360deg);
+  .content-coin {
+    width: 340px;
+    background-color: #333;
+    opacity: .7;
+   
+    color: #ddd;
   }
+  .content-coin li{
+    list-style: none;
+  }
+  .content-coin a{
+    text-decoration: none;
+    color: #fff;
+  }
+  .content-about {
+    width: 90%;
+  }
+
+  .header {
+    padding-bottom: 20px;
+
+
+  }
+
+  .coin {
+    background-color: #00aeee;
+    color: #fff;
+    height: 60vh;
+    background-size: 300%;
+    
+  }
+  
+  .washfold {
+    height: 40vh;
+    background-color: #ee9222;
+    color: #fff;
+  }
+
+  .commercial {
+    background-color: #333;
+    color: #ddd;
+    height: 40vh;
+  }
+ 
+  .about {
+    background-color: #00aeee;
+    color: #fff;
+    height: 40vh;
+  }
+ 
+  .contact {
+    background-color: #00b15e;
+    color: #fff;
+    height: 40vh;
+  }
+  #contact-form {
+    width: 300px;
+    justify-items: center;
+  }
+  .form-control {
+    width: 300px;
+  }
+  .promise {
+    background-color: #ee00da;
+    color: #fff;
+    height: 40vh;
+  }
+
+  .burger {
+    padding: 10px;
+  }
+  .line-1 {
+    margin: 3px;
+    
+    width: 22px;
+    height: 3px;
+    background-color: #00aeee;
+    outline: 1px solid #333;
+  }
+  .line-2 {
+    margin: 3px;
+    
+    width: 22px;
+    height: 3px;
+    background-color: #00aeee;
+    outline: 1px solid #333;
+  }
+  .line-3 {
+    margin: 3px;
+    width: 22px;
+    height: 3px;
+    background-color: #00aeee;
+    outline: 1px solid #333;
+  }
+  .list a{
+    text-decoration: none;
+    color: #ddd;
+  }
+  .list li {
+    list-style: none;
+  }
+}
+
+
+.active {
+  display: flex;
 }
