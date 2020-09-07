@@ -9,17 +9,24 @@ import Contact from './components/Contact'
 import Promise from './components/Promise'
 import Footer from './components/Footer'
 import './App.css';
+import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
+
 
 function App() {
   return (
     <div className="App">
+
+     <Router>
      <Header />
-     <Coin />
-     <WashFold />
-     <Commercial />
-     <About />
-     <Contact />
-     <Promise />
+       <Switch>
+       <Route path="/coin" component={Coin}/>
+       <Route path="/wash" component={WashFold}/>
+       <Route path="/commercial" component={Commercial}/>
+       <Route path="/about" component={About}/>
+       <Route path="/contact" component={Contact}/>
+       <Route path="/promise" component={Promise}/>
+       </Switch>
+     </Router>
      <Footer />
     </div>
   );

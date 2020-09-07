@@ -244,6 +244,21 @@ code {
 
   }
 
+  .nav-style {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    list-style: none;
+    background-color: #333;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    z-index: 1;
+    text-shadow: 1px 1px 10px #fff;
+    color: #eee;
+    width: 100%;
+  }
   .coin {
     background-color: #00aeee;
     color: #fff;
@@ -289,7 +304,8 @@ code {
   }
 
   .burger {
-    padding: 10px;
+    padding: 50px 20px;
+    z-index: 1;
   }
   .line-1 {
     margin: 3px;
@@ -323,7 +339,62 @@ code {
   }
 }
 
+@keyframes spinner{
+  from {
+    transform: rotate(0deg) translate(7px);
+    opacity: 1;
+    background-color: #00aeee;
+  }
+  50% {
+    transform:  translate(20px);
+    opacity: 1;
+    background-color: #00ffff;
+  }
+  to {
+    transform: rotate(720deg) translate(7px);
+    opacity: 1;
+    background-color: #00aeee;
+  }
+
+}
+@keyframes spinnerSpin{
+  from {
+    transform: rotate(0deg) translate(7px);
+    opacity: 1;
+    background-color: #00aeee;
+  }
+  50% {
+    transform:  rotate(0deg) translate(-7px);
+    opacity: 1;
+    background-color: #00ffff;
+  }
+  to {
+    transform: rotate(720deg) translate(7px);
+    opacity: 1;
+    background-color: #00aeee;
+  }
+
+}
+
+
+.hidden {
+  display: none;
+}
 
 .active {
-  display: flex;
+  transform: rotate(45deg);
+  animation: none;
+}
+.line-1 {
+  animation: 3s linear 1s infinite both running spinner;
+}
+.line-2 {
+  
+  
+  animation: 6s linear 1s infinite both running spinnerSpin;
+}
+.line-3 {
+  
+  animation: 9s linear 1s infinite both running spinner;
+
 }

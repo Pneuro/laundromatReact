@@ -5,8 +5,8 @@ import Nav from './Nav'
 const Header = () => {
     return (
         <div className="header" style={headerStyle}>
-            <img style={imgStyleLogo} src={logo} alt="Huron Lakeshore Laundry Logo"></img>
-            <Nav />
+            
+            <Nav image={logo} />
         </div>
     );
 }
@@ -19,8 +19,3 @@ const headerStyle = {
     'color' : '#ddd',
 }
 
-
-const imgStyleLogo = {
-    'width' : '100%',
-    
-}

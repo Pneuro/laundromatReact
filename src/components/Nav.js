@@ -1,6 +1,13 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
+import { useState } from 'react';
 
-function Nav() {
+
+
+
+function Nav(props) {
+    
+
     function navActive (e) {
         e.preventDefault()
         console.log('SHIT MOTHEFUCKER')
@@ -10,19 +17,34 @@ function Nav() {
     return (
         <div>
             <nav>
+                
                 <div onClick={navActive}  className="burger">
-                    <div className="line-1"></div>
+                    <div className="line-1 active"></div>
                     <div className="line-2"></div>
                     <div className="line-3"></div>
-                </div>
                 
-                <ul className="nav-style">
-                    <li><a style={linkStyle} href="#">Coin Laundry</a></li>
-                    <li><a style={linkStyle} href="#">Wash Dry Fold</a></li>
-                    <li><a style={linkStyle} href="#">Commercial</a></li>
-                    <li><a style={linkStyle} href="#">About</a></li>
-                    <li><a style={linkStyle} href="#">Contact</a></li>
-                    <li><a style={linkStyle} href="#">Our Customer Promise</a></li>
+                   
+                    <li><img style={imgStyle} src={props.image} alt="Huron Lakeshore Laundry Logo"></img> </li>
+                </div>
+                <ul className="nav-style hidden">
+                    <li><img style={imgStyle} src={props.image} alt="Huron Lakeshore Laundry Logo"></img> </li>
+                    
+                   <Link to="/coin"> <li>Coin Laundry</li></Link>
+                    <Link to="/wash">
+                    <li>Wash Dry Fold</li>
+                    </Link>
+                    <Link to="/commercial">
+                    <li>Commercial</li>
+                    </Link>
+                    <Link to="/about">
+                    <li>About</li>
+                    </Link>
+                    <Link to="/contact">
+                    <li>Contact</li>
+                    </Link>
+                    <Link to="/promise">
+                    <li>Our Customer Promise</li>
+                    </Link>
                 </ul>
             </nav>
         </div>
@@ -33,11 +55,6 @@ export default Nav
 
 
 
-
-
-const linkStyle = {
-    'textDecoration': 'none',
-    'color' : '#ddd',
-    'padding' : '20px',
+const imgStyle = {
+    "width": '100%',
 }
-

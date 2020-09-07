@@ -29,7 +29,3 @@ function Coin() {
 }
 
 export default Coin
-
-const imgStyle = {
-    'width': '100%',
-}
