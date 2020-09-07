@@ -15,18 +15,13 @@ import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 function App() {
   return (
     <div className="App">
-
-     <Router>
      <Header />
-       <Switch>
-       <Route path="/coin" component={Coin}/>
-       <Route path="/wash" component={WashFold}/>
-       <Route path="/commercial" component={Commercial}/>
-       <Route path="/about" component={About}/>
-       <Route path="/contact" component={Contact}/>
-       <Route path="/promise" component={Promise}/>
-       </Switch>
-     </Router>
+     <Coin />
+     <WashFold />
+     <Commercial />
+     <About />
+     <Contact />
+     <Promise />
      <Footer />
     </div>
   );

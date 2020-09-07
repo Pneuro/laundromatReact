@@ -32,7 +32,7 @@ const footStyle = {
     'width' : '100%',
     'position' : 'relative',
     'bottom' : '0px',
-    'height' : '20vh',
+    'height' : '40vh',
     'display' :'flex',
     'justifyContent' : 'space-around',
     'alignItems': 'center',

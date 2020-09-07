@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;  
-  
+  overflow-x: hidden;
 }
 
 .App {
@@ -42,22 +42,23 @@ code {
   width: 22px;
   height: 3px;
   background-color: #00aeee;
-  outline: 1px solid #333;
+  box-shadow: 1px 1px 3px #333;
 }
 .line-2 {
   margin: 3px;
-  
   width: 22px;
   height: 3px;
   background-color: #00aeee;
-  outline: 1px solid #333;
+  box-shadow: 1px 1px 3px #333;
+  
 }
 .line-3 {
   margin: 3px;
   width: 22px;
   height: 3px;
   background-color: #00aeee;
-  outline: 1px solid #333;
+  box-shadow: 1px 1px 3px #333;
+ 
 }
 .nav-style {
   display: flex;
@@ -268,7 +269,7 @@ code {
   .coin {
     background-color: #00aeee;
     color: #fff;
-    height: 60vh;
+    height: 40vh;
     background-size: 300%;
     
   }
@@ -320,7 +321,7 @@ code {
     width: 22px;
     height: 3px;
     background-color: #00aeee;
-    outline: 1px solid #333;
+    
     transform:  translate(280px) rotate(-45deg) translateX(-8px);
     transition: transform 0.5s ease-in;
     
@@ -331,7 +332,7 @@ code {
     width: 22px;
     height: 3px;
     background-color: #00aeee;
-    outline: 1px solid #333;
+    
   }
   .line-3 {
     margin: 3px;
@@ -341,8 +342,7 @@ code {
     transition: transform 0.5s ease-in;
     
     
-    background-color: #00aeee;
-    outline: 1px solid #333;
+
   }
   .list a{
     text-decoration: none;
@@ -351,42 +351,10 @@ code {
   .list li {
     list-style: none;
   }
-}
-
-@keyframes spinner{
-  from {
-    transform: rotate(0deg) translate(7px);
-    opacity: 1;
-    background-color: #00aeee;
-  }
-  50% {
-    transform:  rotate(0.7) translate(250px);
-    opacity: 1;
-    background-color: #00ffff;
-  }
-  to {
-    transform: rotate(720deg) translate(7px);
-    opacity: 1;
-    background-color: #00aeee;
-  }
 
 }
 
-@keyframes slideIn {
-  from {
-    transform: translateX(100%);
-  }
-  to {
-    transform: translateX(0%);
-  }
-}
 
-.hidden {
-  display: none;
-  
-  animation: 1s ease-in 5s infinite both running slideIn;
-}
 
-.active {
-  animation: 5s linear 5s infinite both running spinner;
-}
+
+
