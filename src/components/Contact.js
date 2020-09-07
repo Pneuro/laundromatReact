@@ -1,7 +1,7 @@
 import React from 'react'
 
 function Contact() {
-    
+
     const handleSubmit = {
         handleSubmit( event ) {
             event.preventDefault();
@@ -31,7 +31,7 @@ function Contact() {
                     <textarea className="form-control" rows="5"></textarea>
                 </div>
                 <button type="submit" className="btn btn-primary">Submit</button>
-</form>     
+            </form>        
         </div>
         </div>
     )
