@@ -1,10 +1,17 @@
 import React from 'react'
+import Calculator from './dropOffCalc/Calculator'
 
 function Coin() {
+    const bullshit = 100**3;
+
     return (
+
+
+
+
         <div className="coin">
             <div className="content-coin">
-            <h2>Coin Operated Machines</h2>
+    <h2>Coin Operated Machines</h2>
             <p>
                 <a href="https://www.electroluxprofessional.com/commercial-laundry-equipment/commercial-washers/">Electrolux</a>, <a href="https://laundrylux.com/wascomat/">Wascomat</a> machines maintained continously to 
                 ensure your clothes are clean every time,
@@ -21,9 +28,10 @@ function Coin() {
                 <li>Additional quarters will allow more time, as long as the time has not depleted.</li>
                 <li>Lint traps and barrels checked daily for your convenience.</li>
             </ul>
-        
+            
             </p>
             </div>
+            <Calculator />
         </div>
     )
 }

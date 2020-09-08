@@ -16,6 +16,7 @@ function Contact() {
                 Please give us the opportunity to hear your story and experience with our store. 
                 We appreciate your business. Find us on <a href="www.facebook.com/huronlakeshorelaundry/">Facebook</a> and <a href="www.twitter.com/huronlakeshorelaundry">Twitter</a>!
             </p>
+            <h3></h3>
 
             <form id="contact-form" onSubmit={handleSubmit} method="POST">
                 <div className="form-group">

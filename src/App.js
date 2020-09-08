@@ -1,6 +1,5 @@
 import React from 'react';
 import Header from './components/Header'
-
 import Coin from './components/Coin'
 import WashFold from './components/Washfold'
 import Commercial from './components/Commercial'
@@ -12,16 +11,20 @@ import './App.css';
 
 
 
+
+
 function App() {
   return (
     <div className="App">
-     <Header />
+      
+     <Header  />
+     
+     <Promise />
      <Coin />
      <WashFold />
      <Commercial />
      <About />
      <Contact />
-     <Promise />
      <Footer />
     </div>
   );
