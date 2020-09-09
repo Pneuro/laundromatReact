@@ -23,7 +23,7 @@ function Contact() {
 
         setName('')
         setEmail('')
-        setMessagenpm ('')
+        setMessage('')
     }
     
     return (
