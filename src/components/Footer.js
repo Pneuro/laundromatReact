@@ -1,6 +1,7 @@
 import React from 'react'
 
 function Footer() {
+    
     return (
         <div style={footStyle}>
             <ul className="list">
@@ -17,8 +18,8 @@ function Footer() {
                 <li>
                     <a href="https://www.neurodesignagency.com/">Neuro Design Agency</a>
                 </li>
+            <h5>Neuro Design Agency // Copyright 2020</h5>
             </ul>
-
         </div>
     )
 }

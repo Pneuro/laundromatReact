@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;  
   overflow-x: hidden;
+  line-height: 1.6;
 }
 
 .App {
@@ -78,15 +79,31 @@ code {
   border-radius: 20px 20px;
   padding: 20px;
 }
+#map {
+  text-decoration: none;
+  color: #ddd;
+  padding: 10px;
+  font-size: 22px;
+  transition-duration: 1s;
+}
+#map:hover {
+  color: #00aeee;
+  background-color: #eee;
+  border-radius: 20px 20px;
+  padding: 20px;
+  transition-duration: 1s;
+}
 .phone-square {
   font-size: 30px;
   align-items: center;
 }
 .nav {
   background-color: rgba(1, 113, 117, 0.514);
-  
+  padding: 30px;
 }
-
+.nav div{
+  padding: 20px;
+}
 .nav-style {
   display: flex;
   flex-direction: row;
@@ -125,6 +142,7 @@ code {
 }
 .content-coin {
   width: 700px;
+  margin: auto;
   background-color: #333;
   opacity: .7;
   padding: 30px;
@@ -151,9 +169,9 @@ code {
 }
 
 .content-about {
-  width: 60%;
+  width: 600px;
   float: left;
-  margin-left: 20px;
+  margin-left: 200px;
   background-color: #333;
   opacity: .7;
   padding: 30px;
@@ -225,9 +243,16 @@ code {
 }
 #contact-form {
   width: 100%;
-  justify-items: center;
+  
 }
 .form-control {
+  width: 100%;
+  border: none;
+  margin: 5px;
+  text-align: center;
+}
+
+.btn {
   width: 100%;
 }
 .promise {
@@ -267,7 +292,12 @@ code {
     color: #fff;
   }
   .content-about {
-    width: 90%;
+    width: 270px;
+    float: center;
+    margin-left: 0px;
+    background-color: #333;
+    opacity: .7;
+    padding: 30px;
   }
 
 
@@ -324,7 +354,7 @@ code {
     height: 40vh;
   }
   #contact-form {
-    width: 300px;
+    width: 100%;
     justify-items: center;
   }
   .form-control {

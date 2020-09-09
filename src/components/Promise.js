@@ -1,10 +1,13 @@
 import React from 'react'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faHeart } from '@fortawesome/free-solid-svg-icons'
 
 function Promise() {
+    const heart = <FontAwesomeIcon icon={faHeart}/>
     return (
         <div className="promise">
             <div className="content">
-            <h2>Our Customer Promise</h2>
+            <h2>{heart} Our Customer Promise</h2>
             <p>Our promise is to cleanliness. 
                 Our dedication is to a clean laundromat. 
                 Weekly and monthly maintenance routines ensure that our equipment is functioning. 

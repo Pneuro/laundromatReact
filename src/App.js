@@ -16,16 +16,14 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-      
-     <Header  />
-     
-     <Promise />
-     <Coin />
-     <WashFold />
-     <Commercial />
-     <About />
-     <Contact />
-     <Footer />
+      <Header  />
+      <Promise />
+      <Coin />
+      <WashFold />
+      <Commercial />
+      <About />
+      <Contact />
+      <Footer />
     </div>
   );
 }

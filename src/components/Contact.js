@@ -1,13 +1,31 @@
-import React from 'react'
+import React, { useState } from 'react';
+import {db} from "./Firebase";
+
+
 
 function Contact() {
+    const [name, setName] = useState();
+    const [email, setEmail] = useState();
+    const [message, setMessage] = useState();
+    
+    const handleSubmit = (e) => {
+        e.preventDefault();
 
-    const handleSubmit = {
-        handleSubmit( event ) {
-            event.preventDefault();
-            console.log(this.state);
-          }
+        db.collection('contacts').add({
+            name : name,
+            email:email,
+            message:message,
+        }).then(() => {
+            alert("Message sent!")
+        }).catch(error => {
+            alert(error.message);
+        });
+
+        setName('')
+        setEmail('')
+        setMessage('')
     }
+    
     return (
         <div className="contact">
             <div className="content">
@@ -18,24 +36,18 @@ function Contact() {
             </p>
             <h3></h3>
 
-            <form id="contact-form" onSubmit={handleSubmit} method="POST">
-                <div className="form-group">
-                    <label htmlFor="name">Name</label>
-                    <input type="text" className="form-control" />
-                </div>
-                <div className="form-group">
-                    <label htmlFor="exampleInputEmail1">Email address</label>
-                    <input type="email" className="form-control" aria-describedby="emailHelp" />
-                </div>
-                <div className="form-group">
-                    <label htmlFor="message">Message</label>
-                    <textarea className="form-control" rows="5"></textarea>
-                </div>
-                <button type="submit" className="btn btn-primary">Submit</button>
-            </form>        
+          <form onSubmit={handleSubmit} className="form">
+              <input onChange={(e) => setName(e.target.value)} type="text" className="form-control" placeholder="Name" name="name" value={name} />
+              
+              <input onChange={(e) => setEmail(e.target.value)} type="text" className="form-control" placeholder="Email" name="email" value={email} />
+              
+              <textarea onChange={(e) => setMessage(e.target.value)} type="text" className="form-control" placeholder="Message" name="message" value={message}/>
+              
+              <input type="submit" className="btn"/>
+          </form>
         </div>
         </div>
     )
-}
+};
 
 export default Contact
