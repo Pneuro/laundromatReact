@@ -12,7 +12,7 @@ function Nav(props) {
     return (
         <div>
             <nav className="nav">
-                <h2>Huron Lakeshore Laundry - Call Now</h2>
+                <h2>Call Now</h2>
                 <div>
                 <a id="phone-number" href="tel:4194337627">419-433-7627 <span className="phone-square">{element}</span></a>
                 </div>
