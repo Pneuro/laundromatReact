@@ -1,6 +1,11 @@
 import React, { useState } from 'react';
 import {db} from "./Firebase";
+import{ init } from 'emailjs-com';
 
+
+
+
+init("user_eTrnCgIl61XrhLOp0wdK9");
 
 
 function Contact() {
@@ -36,15 +41,7 @@ function Contact() {
             </p>
             <h3></h3>
 
-          <form onSubmit={handleSubmit} className="form">
-              <input onChange={(e) => setName(e.target.value)} type="text" className="form-control" placeholder="Name" name="name" value={name} />
-              
-              <input onChange={(e) => setEmail(e.target.value)} type="text" className="form-control" placeholder="Email" name="email" value={email} />
-              
-              <textarea onChange={(e) => setMessage(e.target.value)} type="text" className="form-control" placeholder="Message" name="message" value={message}/>
-              
-              <input type="submit" className="btn"/>
-          </form>
+          <a href="mailto:huronlakeshorelaundry@gmail.com">huronlakeshorelaundry@gmail.com</a>
         </div>
         </div>
     )
