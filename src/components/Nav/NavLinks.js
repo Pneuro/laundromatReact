@@ -7,10 +7,7 @@ function NavLinks(props) {
       <div className={`nav-links ${props.state}`}>
         <img className="img-style nav-img" alt="logo" src={logo} />
         <li>Home</li>
-        <li>About</li>
-        <li>Coin Op</li>
-        <li>Wash Fold</li>
-        <li>Contact</li>
+        <li>Coming Soon - Drop Off Calculator</li>
       </div>
     </div>
   );

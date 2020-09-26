@@ -1,4 +1,5 @@
 import React from "react";
+import washers from "./static/images/washers.jpeg";
 
 function Coin() {
   return (
@@ -37,6 +38,7 @@ function Coin() {
           </ul>
         </p>
       </div>
+        <img src={washers} img="washers" />
     </div>
   );
 }

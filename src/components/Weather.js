@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-
+import starGaze from './static/SVGs/counting_stars_rrnl.svg'
 function Weather(props, cloudActive) {
   const [weatherTemp, setWeatherTemp] = useState(75);
   const [weatherName, setWeatherName] = useState("Today");
@@ -21,6 +21,7 @@ function Weather(props, cloudActive) {
 
   return (
     <div className={props.cloudActive}>
+      <img src={starGaze} alt="Star Gazer" />
       <h1>Weather Information</h1>
       <p>{`The forecast for ${weatherName}: ${weatherShort}`}</p>
       <p>

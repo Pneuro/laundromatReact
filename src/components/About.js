@@ -4,16 +4,14 @@ function About() {
   return (
     <div className="about">
       <div className="content-about">
-        <h2>Who Are We?</h2>
+        <h3>Who Are We?</h3>
         <p>
           A small business about the community. Providing as many services as
           possible with the community in mind. Huron is a great city, and thus
           deserves this reputation be respected in all fronts.
         </p>
-        <h2>Affiliates</h2>
-        <p>Huron Chamber of Commerce</p>
       </div>
-        <img src={busidec} alt="Business Decisions" />
+      <img src={busidec} alt="Business Decisions" />
     </div>
   );
 }

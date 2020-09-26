@@ -8,8 +8,8 @@ function Washfold() {
         <h2>Wash Dry Fold & Drop Off Services</h2>
         <p>
           Our facility allows drop off for all laundry services by appointment
-          only. We're happy to accomodate times for our customers as we build up
-          the momentum of this newly established portion of our business!
+          only. Drop off your laundry and relax or focus on something more
+          pressing than your chores. Leave that to us!
         </p>
         <h3>Residential Laundry Service</h3>
         <ul>

@@ -4,7 +4,7 @@ function Footer() {
   return (
     <div>
       <ul className="footer">
-        <h4>Affilliates</h4>
+        <h2>Affilliates</h2>
         <li>
           <a href="https://www.huron.net/">Chamber of Commerce</a>
         </li>
