@@ -63,10 +63,10 @@ function Nav(props) {
           <div className={`line-2 ${navState2}`}></div>
           <div className={`line-3 ${navState3}`}></div>
         </div>
-        <span className="cloud" onClick={weatherState}>
-          {cloud}
-        </span>
         <NavLinks state={navStateMenu} />
+        <a className="cloud" onClick={weatherState}>
+          {cloud}
+        </a>
         <img
           className="img-style"
           src={props.image}

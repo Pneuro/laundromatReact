@@ -10,10 +10,10 @@
   background-color: #00aeee;
   border-radius: 100%;
   padding: 6px;
-  position: fixed;
-  margin-top: 50px;
-  right: 5px;
-  margin-right: 13px;
+
+  margin: 30px;
+  
+  
   box-shadow: 2px 2px 10px #333;
   transition: 0.3s ease all;
 }
@@ -99,7 +99,7 @@
     margin: auto;
   }
   .header {
-    background-image: url('./components/static/images/dryers.jpeg');
+    background-image: url("./components/static/images/dryers.jpeg");
     background-size: cover;
   }
   p {
@@ -373,7 +373,7 @@
     font-family: "Raleway", sans-serif;
   }
   .header {
-    background-image: url('./components/static/images/dryers.jpeg');
+    background-image: url("./components/static/images/dryers.jpeg");
     background-size: cover;
   }
   p {
@@ -668,7 +668,7 @@
     width: 100%;
   }
   .header {
-    background-image: url('./components/static/images/dryers.jpeg');
+    background-image: url("./components/static/images/dryers.jpeg");
     background-size: cover;
   }
   .nav-links {
