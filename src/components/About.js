@@ -4,8 +4,7 @@ function About() {
   return (
     <div className="about">
       <div className="content-about">
-        
-        <h2>About</h2>
+        <h2>Who Are We?</h2>
         <p>
           A small business about the community. Providing as many services as
           possible with the community in mind. Huron is a great city, and thus

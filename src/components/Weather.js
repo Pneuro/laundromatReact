@@ -22,7 +22,7 @@ function Weather(props, cloudActive) {
   return (
     <div className={props.cloudActive}>
       <h1>Weather Information</h1>
-      <p>{`The forecast for ${weatherName} ${weatherShort}`}</p>
+      <p>{`The forecast for ${weatherName}: ${weatherShort}`}</p>
       <p>
         <div>
           <small>

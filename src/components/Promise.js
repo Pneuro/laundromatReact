@@ -15,11 +15,17 @@ function Promise() {
         <p>
           Our promise is to cleanliness. Our dedication is to a clean
           laundromat. Weekly and monthly maintenance routines ensure that our
-          equipment is functioning. <br></br><img src={community} alt="community holding hands" className="community-image"/>Daily cleaning routines ensure the
-          health and safety of our customers. Your clothes represent who you
-          are, your appearance and presentation, and we respect that. If you
-          trust us with your clothes we'll make sure they're clean every time.
-          From our family to yours. <br></br>
+          equipment is functioning. <br></br>
+          <img
+            src={community}
+            alt="community holding hands"
+            className="community-image"
+          />
+          <br></br>Daily cleaning routines ensure the health and safety of our
+          customers. Your clothes represent who you are, your appearance and
+          presentation, and we respect that. If you trust us with your clothes
+          we'll make sure they're clean every time. From our family to yours.{" "}
+          <br></br>
           -Huron Lakeshore Laundry-
         </p>
       </div>
