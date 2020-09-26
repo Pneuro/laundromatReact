@@ -7,7 +7,6 @@
   font-family: "Raleway", sans-serif;
 }
 
-/* Landing Page */
 .cloud {
   background-color: #00aeee;
   border-radius: 100%;
@@ -27,9 +26,14 @@
 .menu-logo {
   width: 20px;
 }
+
 .nav-list {
   width: 100%;
   opacity: 70%;
+  border: 1px solid blue;
+}
+.nav-img {
+  width: 40%;
 }
 .burger {
   margin-top: 15px;
@@ -88,6 +92,7 @@
     box-sizing: border-box;
     font-family: "Raleway", sans-serif;
   }
+
   p {
     max-width: 600px;
   }
@@ -236,7 +241,7 @@
     z-index: 1;
   }
   .community-image {
-    width: 50%;
+    width: 90%;
     border-radius: 15px;
   }
   img {
@@ -245,12 +250,13 @@
     margin: auto;
   }
   .about {
+    display: flex;
     background: linear-gradient(130deg, #fff, #ddd);
     color: #5273a5;
     line-height: 1.6;
     margin: 15px 0px;
     padding: 10px;
-    box-shadow: 3px 3px 10px #333;
+
     text-align: center;
   }
   .coin {
@@ -270,7 +276,7 @@
 
     margin: 15px 0px;
     padding: 10px;
-    box-shadow: 3px 3px 10px #333;
+
     text-align: center;
   }
   .commercial {
@@ -291,7 +297,7 @@
 
     margin: 15px 0px;
     padding: 10px;
-    box-shadow: 3px 3px 10px #333;
+
     text-align: center;
   }
   .footer {
@@ -463,12 +469,14 @@
     margin: auto;
   }
   .about {
+    display: flex;
+    flex-direction: column;
     background: linear-gradient(130deg, #fff, #ddd);
     color: #5273a5;
     line-height: 1.6;
     margin: 15px 0px;
     padding: 10px;
-    box-shadow: 3px 3px 10px #333;
+
     text-align: center;
   }
   .coin {
@@ -488,7 +496,7 @@
 
     margin: 15px 0px;
     padding: 10px;
-    box-shadow: 3px 3px 10px #333;
+
     text-align: center;
   }
   .commercial {
@@ -509,7 +517,7 @@
 
     margin: 15px 0px;
     padding: 10px;
-    box-shadow: 3px 3px 10px #333;
+
     text-align: center;
   }
   .footer {

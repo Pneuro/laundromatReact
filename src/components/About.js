@@ -1,5 +1,5 @@
 import React from "react";
-
+import busidec from "./static/SVGs/business_decisions.svg";
 function About() {
   return (
     <div className="about">
@@ -13,6 +13,7 @@ function About() {
         <h2>Affiliates</h2>
         <p>Huron Chamber of Commerce</p>
       </div>
+        <img src={busidec} alt="Business Decisions" />
     </div>
   );
 }

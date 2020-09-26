@@ -7,7 +7,12 @@ function Promise() {
   const heart = <FontAwesomeIcon icon={faHeart} />;
   return (
     <div className="promise">
-      <img src={phone_maintenance} alt="idk" />
+      
+          <img
+            src={community}
+            alt="community holding hands"
+            className="community-image"
+          />
       <div className="content">
         <h3>
           {heart} Our Customer Promise {heart}
@@ -16,11 +21,6 @@ function Promise() {
           Our promise is to cleanliness. Our dedication is to a clean
           laundromat. Weekly and monthly maintenance routines ensure that our
           equipment is functioning. <br></br>
-          <img
-            src={community}
-            alt="community holding hands"
-            className="community-image"
-          />
           <br></br>Daily cleaning routines ensure the health and safety of our
           customers. Your clothes represent who you are, your appearance and
           presentation, and we respect that. If you trust us with your clothes
