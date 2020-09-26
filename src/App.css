@@ -1,7 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 * {
-  
   padding: 0;
   box-sizing: border-box;
   font-family: "Raleway", sans-serif;
@@ -91,6 +90,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    border-radius: 5px;
     font-family: "Raleway", sans-serif;
   }
   .App {
@@ -99,11 +99,8 @@
     margin: auto;
   }
   .header {
-    background: radial-gradient(
-      circle,
-      rgba(230, 230, 230, 1) 0%,
-      rgba(255, 255, 255, 1) 100%
-    );
+    background-image: url('./components/static/images/dryers.jpeg');
+    background-size: cover;
   }
   p {
     max-width: 600px;
@@ -376,11 +373,8 @@
     font-family: "Raleway", sans-serif;
   }
   .header {
-    background: radial-gradient(
-      circle,
-      rgba(230, 230, 230, 1) 0%,
-      rgba(255, 255, 255, 1) 100%
-    );
+    background-image: url('./components/static/images/dryers.jpeg');
+    background-size: cover;
   }
   p {
     max-width: 600px;
@@ -673,7 +667,10 @@
   .img-style {
     width: 100%;
   }
-
+  .header {
+    background-image: url('./components/static/images/dryers.jpeg');
+    background-size: cover;
+  }
   .nav-links {
     display: flex;
     flex-direction: column;
