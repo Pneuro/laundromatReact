@@ -64,9 +64,7 @@ function Nav(props) {
           <div className={`line-3 ${navState3}`}></div>
         </div>
         <NavLinks state={navStateMenu} />
-        <a className="cloud" onClick={weatherState}>
-          {cloud}
-        </a>
+
         <img
           className="img-style"
           src={props.image}
@@ -83,6 +81,9 @@ function Nav(props) {
               href="https://www.google.com/maps/dir//huron+lakeshore+laundry/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x883a6b7fa41af895:0x1c2648b4fc6d4954?sa=X&ved=2ahUKEwjMj9a91t3rAhX6B50JHUkNA7YQ9RcwPHoECDwQBA"
             >
               Directions {compass}
+            </a>
+            <a class="cloud con-button" onClick={weatherState}>
+              {cloud}
             </a>
           </div>
         </div>

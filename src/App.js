@@ -8,6 +8,7 @@ import Contact from "./components/Contact";
 import Promise from "./components/Promise";
 import Footer from "./components/Footer";
 
+import Shop from './components/Shop/Shop'
 import "./App.css";
 
 function App() {
@@ -15,13 +16,12 @@ function App() {
     <div className="App">
       <Header />
       
-        <Promise />
-        <About />
-        <Coin />
-        <WashFold />
-        <Commercial />
-        <Contact />
-     
+      <Promise />
+      <About />
+      <Coin />
+      <WashFold />
+      <Commercial />
+      <Contact />
       <Footer />
     </div>
   );
