@@ -70,7 +70,6 @@ function Nav(props) {
           src={props.image}
           alt="Huron Lakeshore Laundry Logo"
         ></img>
-        <Weather cloudActive={cloudActive} />
         <div className="contacter">
           <div id="buttons">
             <a className="con-button" id="phone-number" href="tel:4194337627">
@@ -88,6 +87,7 @@ function Nav(props) {
           </div>
         </div>
       </nav>
+        <Weather cloudActive={cloudActive} />
     </div>
   );
 }

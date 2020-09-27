@@ -12,8 +12,7 @@
   padding: 6px;
 
   margin: 30px;
-  
-  
+
   box-shadow: 2px 2px 10px #333;
   transition: 0.3s ease all;
 }
@@ -178,33 +177,29 @@
       rgba(63, 251, 225, 1) 0%,
       rgba(0, 174, 238, 1) 100%
     );
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#3ffbe1",endColorstr="#00aeee",GradientType=1);
     margin: 50px auto;
-    transition: 1s ease-in-out all;
     opacity: 1;
     box-shadow: 3px 3px 10px #333;
-    transition: translateZ(50%);
+    transition: 0.5s cubic-bezier(0.075, 1.3, 0.165, 1) all;
+    transform: translateY(-00%) scale(1);
   }
   .weather-active a,
   .weather-hidden a {
     color: #000000;
   }
   .weather-hidden {
-    display: none;
+    display: flex;
     border-radius: 5px;
     justify-content: center;
     flex-direction: column;
     height: 0%;
+    width: 0%;
     align-items: center;
-    padding: 20px;
-    background: rgb(63, 251, 225);
-
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#3ffbe1",endColorstr="#00aeee",GradientType=1);
-    margin: 50px auto;
 
     opacity: 0;
     box-shadow: 3px 3px 10px #333;
-    transition: translateZ(-50%);
+    transition: 1s ease all;
+    transform: translateY(-1000%) scale(0);
   }
   .active-menu {
     transform: translateY(0%) translateX(0%);
@@ -646,7 +641,10 @@
     box-sizing: border-box;
     font-family: "Raleway", sans-serif;
   }
-
+  #buttons {
+    display: flex;
+    flex-direction: column;
+  }
   .nav {
     color: #ddd;
     margin-bottom: 30px;
