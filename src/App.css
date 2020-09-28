@@ -140,8 +140,8 @@ body {
     );
     box-shadow: 5px 5px 10px #333;
     position: fixed;
-    transition: 0.3s ease-in-out all;
-    transform: translateY(0%) rotateY(0deg) translateX(-100%);
+    transition: 0.7s ease-in-out all;
+    transform: translateY(0%) rotateY(0deg) translateX(-250%);
   }
 
   .nav-links li {
@@ -246,15 +246,15 @@ body {
   }
   .calc {
     border-radius: 5px;
-    color: #fff;
+    color: #00aeee;
     box-shadow: 3px 3px 10px #333;
     display: flex;
 
     justify-content: center;
     align-items: center;
 
-    background: linear-gradient(130deg, #5273a5, #0058aa);
-    color: #fff;
+    
+    
     line-height: 1.6;
     margin: 15px 0px;
     padding: 20px 0px;
