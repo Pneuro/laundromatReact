@@ -36,7 +36,6 @@ body {
   width: 40%;
 }
 .burger {
-  
   margin-top: 15px;
   margin-right: 14px;
   right: 6px;
@@ -230,43 +229,48 @@ body {
     color: #fff;
   }
   .calcForm {
- 
-    display: flex;
-    flex-direction: column;
+    display: grid;
+
     justify-content: center;
     align-items: center;
+    grid-template-columns: repeat(2, 1fr);
+    background: linear-gradient(130deg, #5273a5, #0058aa);
+    color: #fff;
     line-height: 1.6;
+    margin: 15px 0px;
+    padding: 40px 0px;
+    box-shadow: 3px 3px 10px #333;
+    align-items: center;
+
+    z-index: 1;
   }
   .calc {
     border-radius: 5px;
-    background-color: #00aeee;
-    padding: 20px;
-    margin: 10px;
     color: #fff;
-
     box-shadow: 3px 3px 10px #333;
-  }
-  .calc-form {
     display: flex;
-    background: radial-gradient(
-      circle,
-      rgba(230, 230, 230, 1) 0%,
-      rgba(255, 255, 255, 1) 100%
-    );
-    display: flex;
-    
-    
-    
+
+    justify-content: center;
+    align-items: center;
+
+    background: linear-gradient(130deg, #5273a5, #0058aa);
+    color: #fff;
     line-height: 1.6;
+    margin: 15px 0px;
+    padding: 20px 0px;
+    box-shadow: 3px 3px 10px #333;
+
+    z-index: 1;
   }
-  
+
   .calc input {
     color: rgb(255, 255, 255);
   }
   .bbq {
-    max-width: 20%;
+    max-width: 50%;
     justify-content: center;
     align-items: center;
+    margin: 20px;
   }
   .promise {
     display: grid;
@@ -329,19 +333,20 @@ body {
     text-align: center;
   }
   .shop {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+
     justify-content: center;
     align-items: center;
-    gap: 13px;
+    grid-template-columns: repeat(2, 1fr);
     background: linear-gradient(130deg, #5273a5, #0058aa);
     color: #fff;
     line-height: 1.6;
-
     margin: 15px 0px;
     padding: 40px 0px;
     box-shadow: 3px 3px 10px #333;
-    text-align: center;
+    align-items: center;
+
+    z-index: 1;
   }
   .coin p {
     max-width: 500px;
@@ -853,7 +858,6 @@ body {
     margin: auto;
   }
   .calc-form {
-    
   }
   .about {
     display: flex;

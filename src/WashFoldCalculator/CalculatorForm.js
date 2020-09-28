@@ -43,18 +43,17 @@ function CalculatorForm() {
         <div>
           <h3>Our Pricing</h3>
           <p>
-            Our pricing is based on the time is takes to carefully and neatly
-            place each of your items safely. Personal clothing takes longer than
-            anything else, but also creates the largest amount of time in your
-            personal life.
+            Leave it to us. Time is everything, with family, at work, at a barbecue,
+            and laundry will always pile up. Just drop it off and pick it up, or
+            even better, we'll pick it up. Just give us a call!
           </p>
         </div>
+        <img
+          className="bbq"
+          src={bbq}
+          alt="Forget doing laundry, leave that to the pros"
+        />
       </div>
-      <img
-        className="bbq"
-        src={bbq}
-        alt="Forget doing laundry, leave that to the pros"
-      />
     </div>
   );
 }

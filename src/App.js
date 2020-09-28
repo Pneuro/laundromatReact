@@ -25,6 +25,7 @@ function App() {
             <Coin />
             <WashFold />
             <Commercial />
+            <Contact />
           </Route>
           <Route path="/calculator">
             <CalculatorForm />
@@ -34,7 +35,6 @@ function App() {
           </Route>
         </Switch>
       </Router>
-      <Contact />
       <Footer />
     </div>
   );
