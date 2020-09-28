@@ -40,7 +40,6 @@ function Nav(props) {
 
   const weatherState = () => {
     if (cloudActive === "weather-hidden") {
-      
       setCloudActive("weather-active");
     } else if (cloudActive === "weather-active") {
       setCloudActive("weather-hidden");
@@ -48,7 +47,7 @@ function Nav(props) {
   };
 
   return (
-    <div>
+    <div className="header">
       <nav className="nav">
         <div onClick={burger} className="burger">
           <div className={`line-1 ${navState1}`}></div>
@@ -79,7 +78,7 @@ function Nav(props) {
           </div>
         </div>
       </nav>
-        <Weather cloudActive={cloudActive} />
+      <Weather cloudActive={cloudActive} />
     </div>
   );
 }
