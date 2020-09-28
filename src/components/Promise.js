@@ -1,7 +1,6 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHeart } from "@fortawesome/free-solid-svg-icons";
-import phone_maintenance from "./static/SVGs/phone_maintenance.svg";
 import community from "./static/images/community.jpg";
 function Promise() {
   const heart = <FontAwesomeIcon icon={faHeart} />;

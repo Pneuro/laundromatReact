@@ -13,9 +13,11 @@ function Coin() {
           , <a href="https://laundrylux.com/wascomat/">Wascomat</a> machines
           maintained continously to ensure your clothes are clean every time,
           and if they're not <a href="/contact">let us know!</a>
+          </p>
           <h3>About the machines</h3>
-          <ul>
             <h4>Washers</h4>
+          
+          <ul>
             <li>
               2 load machine = <strong>$3.25</strong> / $1.62/load
             </li>
@@ -36,9 +38,9 @@ function Coin() {
             </li>
             <li>Lint traps and barrels checked daily for your convenience.</li>
           </ul>
-        </p>
+        
       </div>
-        <img src={washers} img="washers" />
+        <img src={washers} alt="Electrolux washers" />
     </div>
   );
 }

@@ -1,12 +1,4 @@
 import React, { useState } from "react";
-import { useSelector, useDispatch } from "react-redux";
-
-import {
-  burgerNavActive,
-  burgerNavInactive,
-  weatherNavActive,
-  weatherNavInactive,
-} from "./NavSlice";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faCompass,
@@ -48,7 +40,7 @@ function Nav(props) {
 
   const weatherState = () => {
     if (cloudActive === "weather-hidden") {
-      console.log(cloudActive);
+      
       setCloudActive("weather-active");
     } else if (cloudActive === "weather-active") {
       setCloudActive("weather-hidden");
@@ -76,12 +68,12 @@ function Nav(props) {
               419-433-7627 <span className="phone-square">{element}</span>
             </a>
             <a
-              class="con-button"
+              className="con-button"
               href="https://www.google.com/maps/dir//huron+lakeshore+laundry/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x883a6b7fa41af895:0x1c2648b4fc6d4954?sa=X&ved=2ahUKEwjMj9a91t3rAhX6B50JHUkNA7YQ9RcwPHoECDwQBA"
             >
               Directions {compass}
             </a>
-            <a class="cloud con-button" onClick={weatherState}>
+            <a className="cloud con-button" onClick={weatherState}>
               {cloud}
             </a>
           </div>

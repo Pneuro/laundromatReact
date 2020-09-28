@@ -1,12 +1,16 @@
 import React from "react";
-
+import shirt from "./shirt.jpeg";
 export default function Shop() {
   return (
-    <div>
+    <div className="shop"
+     
+    >
       <h1>Shop</h1>
-      <p>Buy my shirt</p>
-      <img src="" alt="Shirt" />
-      <button type="submit">Submit</button>
+      <div className="card">
+        <p>Buy my shirt</p>
+        <img src={shirt} alt="Shirt" />
+        <button type="submit">Submit</button>
+      </div>
     </div>
   );
 }
