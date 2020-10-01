@@ -54,7 +54,7 @@ function Nav(props) {
           <div className={`line-2 ${navState2}`}></div>
           <div className={`line-3 ${navState3}`}></div>
         </div>
-        <NavLinks state={navStateMenu} />
+        <NavLinks setState={burger} state={navStateMenu} />
 
         <img
           className="img-style"

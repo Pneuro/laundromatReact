@@ -5,15 +5,21 @@ function NavLinks(props) {
   return (
     <div>
       <div className={`nav-links ${props.state}`}>
-        <img className="nav-img" alt="logo" src={logo} />
+        <img id="nav-img" alt="logo" src={logo} />
         <li>
-          <Link to="/">Home</Link>
+          <Link onClick={() => props.setState()} to="/">
+            Home
+          </Link>
         </li>
         <li>
-          <Link to="/calculator">Calculator</Link>
+          <Link onClick={() => props.setState()} to="/calculator">
+            Calculator
+          </Link>
         </li>
         <li>
-          <Link to="/shop">Shop</Link>
+          <Link onClick={() => props.setState()} to="/shop">
+            Shop
+          </Link>
         </li>
       </div>
     </div>

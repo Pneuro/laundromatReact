@@ -6,7 +6,7 @@
   font-family: "Raleway", sans-serif;
 }
 body {
-  background-color: #fff;
+  background-color: rgb(255, 255, 255);
 }
 .cloud {
   background-color: #00aeee;
@@ -32,7 +32,8 @@ body {
   opacity: 70%;
   border: 1px solid blue;
 }
-.nav-img {
+#nav-img {
+  width: 350px;
 }
 .burger {
   margin-top: 15px;
@@ -110,9 +111,7 @@ body {
   .nav a {
     color: #ffffff;
   }
-  .nav-img {
-    width: 50px;
-  }
+ 
   li {
     list-style: none;
   }
@@ -128,9 +127,11 @@ body {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+    top: 20px;
+    left: 50px;
     z-index: 2;
     position: absolute;
-    height: 100vh;
+    height: 75vh;
     width: 20vw;
     background: linear-gradient(
       180deg,
@@ -216,7 +217,15 @@ body {
     align-items: center;
     line-height: 2em;
   }
-
+  button {
+    border: none;
+    width: 150px;
+    height: 75px;
+    padding: 20px;
+    background-color: #00aeee;
+    margin: 1em;
+    cursor: pointer;
+  }
   .con-button {
     border-radius: 5px;
     background-color: #00aeee;
@@ -326,9 +335,12 @@ body {
     box-shadow: 3px 3px 10px #333;
     text-align: center;
   }
+  a {
+    cursor: pointer;
+  }
   .shop {
-    display: grid;
-
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     grid-template-columns: repeat(2, 1fr);
@@ -338,9 +350,15 @@ body {
     margin: 15px 0px;
     padding: 40px 0px;
     box-shadow: 3px 3px 10px #333;
-    align-items: center;
-
     z-index: 1;
+  }
+  .card {
+    background-color: #333;
+    color: #00aaee;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
   .coin p {
     max-width: 500px;
@@ -434,9 +452,7 @@ body {
   .nav a {
     color: #ffffff;
   }
-  .nav-img {
-    width: 30vw;
-  }
+
   li {
     list-style: none;
   }
@@ -555,7 +571,13 @@ body {
   .con-button a {
     color: #fff;
   }
-
+  .shirt-link {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
   .promise {
     display: grid;
     grid-gap: 10px;
@@ -570,6 +592,9 @@ body {
     align-items: center;
 
     z-index: 1;
+  }
+  .card {
+    max-width: 80vw;
   }
   .promise h3 {
     text-align: center;
@@ -706,7 +731,7 @@ body {
   .nav a {
     color: #ffffff;
   }
-  .nav-img {
+  #nav-img {
     width: 60vw;
   }
   li {

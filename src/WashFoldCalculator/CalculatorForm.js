@@ -39,7 +39,7 @@ function CalculatorForm() {
             <option value="1.69">Same-Day($1.69/LB)</option>
           </select>
         </form>
-        <p class="cost">{`$${cost.toFixed(2)} before tax.`}</p>
+        <p className="cost">{`$${cost.toFixed(2)} before tax.`}</p>
         <div>
           <h3>Our Pricing</h3>
           <p>
