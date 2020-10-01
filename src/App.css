@@ -28,12 +28,11 @@ body {
 }
 
 .nav-list {
-  width: 100%;
+  width: 80%;
   opacity: 70%;
   border: 1px solid blue;
 }
 .nav-img {
-  width: 40%;
 }
 .burger {
   margin-top: 15px;
@@ -230,7 +229,6 @@ body {
   }
   .calcForm {
     display: grid;
-
     justify-content: center;
     align-items: center;
     grid-template-columns: repeat(2, 1fr);
@@ -241,7 +239,6 @@ body {
     padding: 40px 0px;
     box-shadow: 3px 3px 10px #333;
     align-items: center;
-
     z-index: 1;
   }
   .calc {
@@ -249,22 +246,19 @@ body {
     color: #00aeee;
     box-shadow: 3px 3px 10px #333;
     display: flex;
-
+    font-size: 24px;
     justify-content: center;
     align-items: center;
-
-    
-    
-    line-height: 1.6;
-    margin: 15px 0px;
-    padding: 20px 0px;
+    padding: 10px 20px;
     box-shadow: 3px 3px 10px #333;
-
     z-index: 1;
   }
 
   .calc input {
     color: rgb(255, 255, 255);
+  }
+  .cost {
+    font-size: 30px;
   }
   .bbq {
     max-width: 50%;
@@ -441,7 +435,7 @@ body {
     color: #ffffff;
   }
   .nav-img {
-    width: 50px;
+    width: 30vw;
   }
   li {
     list-style: none;
@@ -713,7 +707,7 @@ body {
     color: #ffffff;
   }
   .nav-img {
-    width: 50px;
+    width: 60vw;
   }
   li {
     list-style: none;
@@ -732,11 +726,11 @@ body {
   .nav-links {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     z-index: 2;
-    position: absolute;
-    height: 100vh;
+
+    height: 65vh;
     width: 80vw;
     background: linear-gradient(
       180deg,
@@ -833,6 +827,8 @@ body {
     padding: 20px;
     margin: 10px;
     box-shadow: 3px 3px 10px #333;
+    width: 180px;
+    text-align: center;
   }
   .con-button a {
     color: #fff;

@@ -17,7 +17,7 @@ function CalculatorForm() {
         }}
       >
         <h2>Estimate your drop off cost!</h2>
-        <small>Average load size is approximately 8 pounds</small>
+        <small>Average load size is approximately 7 pounds</small>
         <form>
           <input
             name="pounds"
@@ -39,13 +39,13 @@ function CalculatorForm() {
             <option value="1.69">Same-Day($1.69/LB)</option>
           </select>
         </form>
-        <p>{`$${cost.toFixed(2)} before tax.`}</p>
+        <p class="cost">{`$${cost.toFixed(2)} before tax.`}</p>
         <div>
           <h3>Our Pricing</h3>
           <p>
-            Leave it to us. Time is everything, with family, at work, at a barbecue,
-            and laundry will always pile up. Just drop it off and pick it up, or
-            even better, we'll pick it up. Just give us a call!
+            Leave it to us. Time is everything, with family, at work, at a
+            barbecue, and laundry will always pile up. Just drop it off and pick
+            it up, or even better, we'll pick it up. Just give us a call!
           </p>
         </div>
         <img

@@ -5,7 +5,7 @@ function NavLinks(props) {
   return (
     <div>
       <div className={`nav-links ${props.state}`}>
-        <img className="img-style nav-img" alt="logo" src={logo} />
+        <img className="nav-img" alt="logo" src={logo} />
         <li>
           <Link to="/">Home</Link>
         </li>
